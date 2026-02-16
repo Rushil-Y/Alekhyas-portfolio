@@ -1,10 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomePage from "./components/HomePage";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4 sm:p-6 md:p-12 text-center">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-        Alekhyas Portfolio - Coming Soon!
-      </h1>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        {/* Home page with all sections */}
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 
