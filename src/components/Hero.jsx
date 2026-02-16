@@ -10,9 +10,9 @@ function Hero() {
       <p className="text-2xl sm:text-3xl md:text-4xl text-gray-700 mb-6">
         Designer | Accessories & Footwear.
       </p>
-      <button className="px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition">
+      {/* <button className="px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition">
         See My Work
-      </button>
+      </button> */}
     </section>
   );
 }

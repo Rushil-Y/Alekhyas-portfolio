@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "./Hero";
+import Contact from "./Contact";
 
 function HomePage() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <Contact />
     </>
   );
 }
