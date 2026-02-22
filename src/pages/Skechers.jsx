@@ -16,15 +16,15 @@ function Skechers() {
   return (
     <section className="min-h-screen bg-white px-6 py-24 flex flex-col items-center text-center">
       {/* Main Logo */}
-      <div className="mb-16 w-full lg:max-w-6xl">
+      <div className="mb-16">
         <img
           src="/logos/skechers.png"
           alt="Skechers Project"
-          className="w-full rounded-2xl mx-auto"
+          className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 rounded-2xl mx-auto"
         />
       </div>
 
-      {/* Loop through slides */}
+      {/* slides */}
       <div className="w-full lg:max-w-6xl flex flex-col items-center space-y-10 mb-10">
         {slides.map((slide, index) => (
           <img
