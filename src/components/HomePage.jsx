@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "./Hero";
+import Projects from "./Projects";
 import Contact from "./Contact";
 
 function HomePage() {
@@ -18,6 +19,7 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <Projects />
       <Contact />
     </>
   );

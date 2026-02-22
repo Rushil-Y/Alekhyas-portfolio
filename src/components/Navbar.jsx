@@ -41,9 +41,9 @@ function Navbar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-black">
+            {/* <Link to="/" className="text-2xl font-bold text-black">
               Alekhya Mulpuri
-            </Link>
+            </Link> */}
           </div>
 
           {/* Desktop Menu */}
