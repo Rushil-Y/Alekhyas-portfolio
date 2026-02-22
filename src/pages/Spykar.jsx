@@ -7,7 +7,7 @@ function Spykar() {
 
       <div className="mb-16 w-full max-w-3xl">
         <img
-          src="/projects/spykar/hero.jpg"
+          src="/logos/spykar.png"
           alt="Spykar Project"
           className="w-full rounded-2xl mx-auto"
         />

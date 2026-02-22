@@ -7,7 +7,7 @@ function Firstcry() {
 
       <div className="mb-16 w-full max-w-3xl">
         <img
-          src="/projects/firstcry/hero.jpg"
+          src="/logos/firstcry.png"
           alt="Firstcry Project"
           className="w-full rounded-2xl mx-auto"
         />

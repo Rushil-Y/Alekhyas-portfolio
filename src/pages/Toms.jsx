@@ -7,7 +7,7 @@ function Toms() {
 
       <div className="mb-16 w-full max-w-3xl">
         <img
-          src="/projects/toms/hero.jpg"
+          src="/logos/toms.png"
           alt="Toms Project"
           className="w-full rounded-2xl mx-auto"
         />

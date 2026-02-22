@@ -7,7 +7,7 @@ function Skechers() {
 
       <div className="mb-16 w-full max-w-3xl">
         <img
-          src="/projects/skechers/hero.jpg"
+          src="/logos/skechers.png"
           alt="Skechers Project"
           className="w-full rounded-2xl mx-auto"
         />
