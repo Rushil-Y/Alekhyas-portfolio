@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 
 function Firstcry() {
+  const slides = [
+    "/projects/firstcry/12.png",
+    "/projects/firstcry/13.png",
+    "/projects/firstcry/14.png",
+    "/projects/firstcry/15.png",
+  ];
+
   return (
     <section className="min-h-screen bg-white px-6 py-24 flex flex-col items-center text-center">
-      <h1 className="text-5xl font-bold text-pink-600 mb-10">Firstcry</h1>
-
-      <div className="mb-16 w-full max-w-3xl">
+      <div className="mb-16 w-full lg:max-w-6xl">
         <img
           src="/logos/firstcry.png"
           alt="Firstcry Project"
@@ -13,9 +18,16 @@ function Firstcry() {
         />
       </div>
 
-      <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mb-10">
-        Add description here...
-      </p>
+      <div className="w-full lg:max-w-6xl flex flex-col items-center space-y-10 mb-10">
+        {slides.map((slide, index) => (
+          <img
+            key={index}
+            src={slide}
+            alt={`Firstcry Slide ${index + 1}`}
+            className="w-full sm:w-11/12 lg:w-3/4 xl:w-2/3 rounded-2xl"
+          />
+        ))}
+      </div>
 
       <Link
         to="/"

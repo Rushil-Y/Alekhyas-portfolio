@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom";
 
 function Toms() {
+  const slides = [
+    "/projects/toms/35.png",
+    "/projects/toms/36.png",
+    "/projects/toms/37.png",
+    "/projects/toms/38.png",
+    "/projects/toms/39.png",
+    "/projects/toms/40.png",
+    "/projects/toms/41.png",
+    "/projects/toms/42.png",
+    "/projects/toms/43.png",
+  ];
+
   return (
     <section className="min-h-screen bg-white px-6 py-24 flex flex-col items-center text-center">
-      <h1 className="text-5xl font-bold text-pink-600 mb-10">Toms</h1>
-
-      <div className="mb-16 w-full max-w-3xl">
+      <div className="mb-16 w-full lg:max-w-6xl">
         <img
           src="/logos/toms.png"
           alt="Toms Project"
@@ -13,9 +23,16 @@ function Toms() {
         />
       </div>
 
-      <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mb-10">
-        Add description here...
-      </p>
+      <div className="w-full lg:max-w-6xl flex flex-col items-center space-y-10 mb-10">
+        {slides.map((slide, index) => (
+          <img
+            key={index}
+            src={slide}
+            alt={`Toms Slide ${index + 1}`}
+            className="w-full sm:w-11/12 lg:w-3/4 xl:w-2/3 rounded-2xl"
+          />
+        ))}
+      </div>
 
       <Link
         to="/"
