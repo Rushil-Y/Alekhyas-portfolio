@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Import the individual project pages
 import Skechers from "./pages/Skechers";
@@ -11,6 +12,7 @@ import Toms from "./pages/Toms";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         {/* Home page with all sections */}
