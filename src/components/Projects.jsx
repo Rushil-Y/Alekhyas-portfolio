@@ -37,7 +37,7 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border border-pink-100"
+            className="group bg-white rounded-2xl p-8 border border-pink-100 transition duration-300 lg:shadow-md lg:hover:shadow-xl lg:hover:-translate-y-2"
           >
             <div className="flex flex-col items-center text-center space-y-6">
               {/* Logo */}
@@ -45,7 +45,7 @@ function Projects() {
                 <img
                   src={project.logo}
                   alt={project.title}
-                  className="max-h-full object-contain grayscale group-hover:grayscale-0 transition duration-300"
+                  className="max-h-full object-contain transition duration-300 lg:grayscale lg:group-hover:grayscale-0"
                 />
               </div>
 
