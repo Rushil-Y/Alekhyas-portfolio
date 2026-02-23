@@ -53,7 +53,7 @@ function Skechers() {
             src={slide}
             alt={`Skechers Slide ${index + 1}`}
             onClick={() => setSelectedImage(slide)}
-            className="w-[75%] rounded-2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
+            className="w-full lg:w-[75%] rounded-2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
           />
         ))}
       </div>
