@@ -15,7 +15,7 @@ function Toms() {
     "/projects/toms/TOMS-28.png",
     "/projects/toms/TOMS-29.png",
     "/projects/toms/TOMS-30.png",
-    // "/projects/toms/TOMS-31.png",
+    "/projects/toms/TOMS-31.png",
   ];
 
   return (

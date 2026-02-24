@@ -5,6 +5,7 @@ function Skechers() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const slides = [
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-01.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-02.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-03.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-04.png",
@@ -30,6 +31,7 @@ function Skechers() {
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-24.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-25.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-26.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-27.png",
     ,
   ];
 
