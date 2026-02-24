@@ -44,6 +44,7 @@ function Spykar() {
             key={index}
             src={slide}
             alt={`Spykar Slide ${index + 1}`}
+            loading="lazy"
             onClick={() => setSelectedImage(slide)}
             className="w-full lg:w-[75%] 2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
           />
