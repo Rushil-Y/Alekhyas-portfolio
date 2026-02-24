@@ -5,7 +5,7 @@ function Skechers() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const slides = [
-    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-01.png",
+    ,
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-02.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-03.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-04.png",
@@ -31,7 +31,6 @@ function Skechers() {
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-24.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-25.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-26.png",
-    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-27.png",
     ,
   ];
 
@@ -48,7 +47,7 @@ function Skechers() {
 
       {/* Slides */}
 
-      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-14 mb-16">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-7 mb-16">
         {slides.map((slide, index) => (
           <img
             key={index}

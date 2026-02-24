@@ -5,7 +5,6 @@ function Toms() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const slides = [
-    "/projects/toms/TOMS-1.png",
     "/projects/toms/TOMS-22.png",
     "/projects/toms/TOMS-23.png",
     "/projects/toms/TOMS-24.png",
@@ -15,7 +14,6 @@ function Toms() {
     "/projects/toms/TOMS-28.png",
     "/projects/toms/TOMS-29.png",
     "/projects/toms/TOMS-30.png",
-    "/projects/toms/TOMS-31.png",
   ];
 
   return (
@@ -23,14 +21,14 @@ function Toms() {
       {/* Logo */}
       <div className="mb-14">
         <img
-          src="/logos/toms.png"
+          src="/projects/toms/TOMS-1.png"
           alt="Toms Project"
           className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 rounded-2xl mx-auto"
         />
       </div>
 
       {/* Slides */}
-      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-14 mb-16">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-7 mb-16">
         {slides.map((slide, index) => (
           <img
             key={index}

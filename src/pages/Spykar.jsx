@@ -38,7 +38,7 @@ function Spykar() {
       </div>
 
       {/* Slides */}
-      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-14 mb-16">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-7 mb-16">
         {slides.map((slide, index) => (
           <img
             key={index}
