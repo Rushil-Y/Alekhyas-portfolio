@@ -32,10 +32,10 @@ function About() {
             to design challenges.
           </p>
           <p>
-            Outside of design, I enjoy exploring fashion, photography, and
-            creative arts. These hobbies inspire my work and fuel my creativity,
-            allowing me to bring fresh perspectives to every project I
-            undertake.
+            Outside of design, I enjoy traveling, exploring different cultures,
+            and indulging in several art forms, and collecting antiques. These
+            hobbies inspire my work and fuel my creativity, allowing me to bring
+            fresh perspectives to every project I undertake.
           </p>
         </div>
       </div>
