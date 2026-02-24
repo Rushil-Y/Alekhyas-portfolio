@@ -47,14 +47,14 @@ function Skechers() {
 
       {/* Slides */}
 
-      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-7 mb-16">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center mb-16">
         {slides.map((slide, index) => (
           <img
             key={index}
             src={slide}
             alt={`Skechers Slide ${index + 1}`}
             onClick={() => setSelectedImage(slide)}
-            className="w-full lg:w-[75%] rounded-2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
+            className="w-full lg:w-[75%] 2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
           />
         ))}
       </div>
