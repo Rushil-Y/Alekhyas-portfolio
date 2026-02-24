@@ -1,22 +1,27 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Toms() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const slides = [
-    "/projects/toms/35.png",
-    "/projects/toms/36.png",
-    "/projects/toms/37.png",
-    "/projects/toms/38.png",
-    "/projects/toms/39.png",
-    "/projects/toms/40.png",
-    "/projects/toms/41.png",
-    "/projects/toms/42.png",
-    "/projects/toms/43.png",
+    "/projects/toms/TOMS-1.png",
+    "/projects/toms/TOMS-22.png",
+    "/projects/toms/TOMS-23.png",
+    "/projects/toms/TOMS-24.png",
+    "/projects/toms/TOMS-25.png",
+    "/projects/toms/TOMS-26.png",
+    "/projects/toms/TOMS-27.png",
+    "/projects/toms/TOMS-28.png",
+    "/projects/toms/TOMS-29.png",
+    "/projects/toms/TOMS-30.png",
+    // "/projects/toms/TOMS-31.png",
   ];
 
   return (
-    <section className="min-h-screen bg-white px-6 py-24 flex flex-col items-center text-center">
+    <section className="min-h-screen bg-white px-4 sm:px-6 lg:px-10 py-20 flex flex-col items-center text-center">
       {/* Logo */}
-      <div className="mb-16">
+      <div className="mb-14">
         <img
           src="/logos/toms.png"
           alt="Toms Project"
@@ -25,16 +30,35 @@ function Toms() {
       </div>
 
       {/* Slides */}
-      <div className="w-full lg:max-w-6xl flex flex-col items-center space-y-10 mb-10">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-14 mb-16">
         {slides.map((slide, index) => (
           <img
             key={index}
             src={slide}
             alt={`Toms Slide ${index + 1}`}
-            className="w-full sm:w-11/12 lg:w-3/4 xl:w-2/3 rounded-2xl"
+            onClick={() => setSelectedImage(slide)}
+            className="w-full lg:w-[75%] rounded-2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
           />
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-6 right-6 text-white text-3xl font-bold"
+          >
+            ✕
+          </button>
+
+          <img
+            src={selectedImage}
+            alt="Expanded view"
+            className="max-h-[95vh] max-w-[95vw] rounded-xl"
+          />
+        </div>
+      )}
 
       {/* Back Button */}
       <Link

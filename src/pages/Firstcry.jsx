@@ -1,17 +1,30 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Firstcry() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const slides = [
-    "/projects/firstcry/12.png",
-    "/projects/firstcry/13.png",
-    "/projects/firstcry/14.png",
-    "/projects/firstcry/15.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-01.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-02.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-03.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-04.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-05.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-06.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-07.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-08.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-09.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-10.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-11.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-12.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-13.png",
+    "/projects/firstcry/FC FINAL PORTFOLIO-14.png",
   ];
 
   return (
-    <section className="min-h-screen bg-white px-6 py-24 flex flex-col items-center text-center">
-      {/*  Logo */}
-      <div className="mb-16">
+    <section className="min-h-screen bg-white px-4 sm:px-6 lg:px-10 py-20 flex flex-col items-center text-center">
+      {/* Logo */}
+      <div className="mb-14">
         <img
           src="/logos/firstcry.png"
           alt="Firstcry Project"
@@ -20,16 +33,35 @@ function Firstcry() {
       </div>
 
       {/* Slides */}
-      <div className="w-full lg:max-w-6xl flex flex-col items-center space-y-10 mb-10">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-14 mb-16">
         {slides.map((slide, index) => (
           <img
             key={index}
             src={slide}
             alt={`Firstcry Slide ${index + 1}`}
-            className="w-full sm:w-11/12 lg:w-3/4 xl:w-2/3 rounded-2xl"
+            onClick={() => setSelectedImage(slide)}
+            className="w-full lg:w-[75%] rounded-2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
           />
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-6 right-6 text-white text-3xl font-bold"
+          >
+            ✕
+          </button>
+
+          <img
+            src={selectedImage}
+            alt="Expanded view"
+            className="max-h-[95vh] max-w-[95vw] rounded-xl"
+          />
+        </div>
+      )}
 
       {/* Back Button */}
       <Link

@@ -1,31 +1,35 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Spykar() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const slides = [
-    "/projects/spykar/16.png",
-    "/projects/spykar/17.png",
-    "/projects/spykar/18.png",
-    "/projects/spykar/19.png",
-    "/projects/spykar/20.png",
-    "/projects/spykar/21.png",
-    "/projects/spykar/22.png",
-    "/projects/spykar/23.png",
-    "/projects/spykar/24.png",
-    "/projects/spykar/25.png",
-    "/projects/spykar/26.png",
-    "/projects/spykar/27.png",
-    "/projects/spykar/28.png",
-    "/projects/spykar/29.png",
-    "/projects/spykar/30.png",
-    "/projects/spykar/31.png",
-    "/projects/spykar/32.png",
-    "/projects/spykar/33.png",
+    "/projects/spykar/SPYKAR-01.png",
+    "/projects/spykar/SPYKAR-02.png",
+    "/projects/spykar/SPYKAR-03.png",
+    "/projects/spykar/SPYKAR-04.png",
+    "/projects/spykar/SPYKAR-05.png",
+    "/projects/spykar/SPYKAR-06.png",
+    "/projects/spykar/SPYKAR-07.png",
+    "/projects/spykar/SPYKAR-08.png",
+    "/projects/spykar/SPYKAR-09.png",
+    "/projects/spykar/SPYKAR-10.png",
+    "/projects/spykar/SPYKAR-11.png",
+    "/projects/spykar/SPYKAR-12.png",
+    "/projects/spykar/SPYKAR-13.png",
+    "/projects/spykar/SPYKAR-14.png",
+    "/projects/spykar/SPYKAR-15.png",
+    "/projects/spykar/SPYKAR-16.png",
+    "/projects/spykar/SPYKAR-17.png",
+    "/projects/spykar/SPYKAR-18.png",
+    "/projects/spykar/SPYKAR-19.png",
   ];
 
   return (
-    <section className="min-h-screen bg-white px-6 py-24 flex flex-col items-center text-center">
+    <section className="min-h-screen bg-white px-4 sm:px-6 lg:px-10 py-20 flex flex-col items-center text-center">
       {/* Logo */}
-      <div className="mb-16">
+      <div className="mb-14">
         <img
           src="/logos/spykar.png"
           alt="Spykar Project"
@@ -34,16 +38,35 @@ function Spykar() {
       </div>
 
       {/* Slides */}
-      <div className="w-full lg:max-w-6xl flex flex-col items-center space-y-10 mb-10">
+      <div className="w-full max-w-screen-2xl flex flex-col items-center space-y-14 mb-16">
         {slides.map((slide, index) => (
           <img
             key={index}
             src={slide}
             alt={`Spykar Slide ${index + 1}`}
-            className="w-full sm:w-11/12 lg:w-3/4 xl:w-2/3 rounded-2xl"
+            onClick={() => setSelectedImage(slide)}
+            className="w-full lg:w-[75%] rounded-2xl cursor-pointer transition duration-300 hover:scale-[1.01]"
           />
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-6 right-6 text-white text-3xl font-bold"
+          >
+            ✕
+          </button>
+
+          <img
+            src={selectedImage}
+            alt="Expanded view"
+            className="max-h-[95vh] max-w-[95vw] rounded-xl"
+          />
+        </div>
+      )}
 
       {/* Back Button */}
       <Link
