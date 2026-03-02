@@ -31,7 +31,18 @@ function Skechers() {
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-24.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-25.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-26.png",
-    ,
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-27.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-28.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-29.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-30.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-31.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-32.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-33.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-34.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-35.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-36.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-37.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-38.png",
   ];
 
   return (
