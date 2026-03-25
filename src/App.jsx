@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/projects/spykar" element={<Spykar />} />
         <Route path="/projects/toms" element={<Toms />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
