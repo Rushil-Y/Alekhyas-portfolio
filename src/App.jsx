@@ -6,6 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 // Import the individual project pages
 import Skechers from "./pages/Skechers";
+import Gas from "./pages/Gas";
 import Firstcry from "./pages/Firstcry";
 import Spykar from "./pages/Spykar";
 import Toms from "./pages/Toms";
@@ -21,6 +22,7 @@ function App() {
 
         {/* Individual project pages */}
         <Route path="/projects/skechers" element={<Skechers />} />
+        <Route path="/projects/Gas" element={<Gas />} />
         <Route path="/projects/firstcry" element={<Firstcry />} />
         <Route path="/projects/spykar" element={<Spykar />} />
         <Route path="/projects/toms" element={<Toms />} />

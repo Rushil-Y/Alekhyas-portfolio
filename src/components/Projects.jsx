@@ -8,6 +8,11 @@ function Projects() {
       link: "/projects/skechers",
     },
     {
+      title: "GAS",
+      logo: "/logos/GASlogo.png",
+      link: "/projects/GAS",
+    },
+    {
       title: "Firstcry",
       logo: "/logos/firstcry.png",
       link: "/projects/firstcry",
@@ -33,7 +38,7 @@ function Projects() {
         Projects
       </h2>
 
-      <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
         {projects.map((project, index) => (
           <div
             key={index}
