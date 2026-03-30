@@ -5,7 +5,7 @@ function Gas() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const slides = [
-    "/projects/gas/GAS PORTFOLIO-01.png",
+    // "/projects/gas/GAS PORTFOLIO-01.png",
     "/projects/gas/GAS PORTFOLIO-02.png",
     "/projects/gas/GAS PORTFOLIO-03.png",
     "/projects/gas/GAS PORTFOLIO-04.png",
@@ -22,9 +22,9 @@ function Gas() {
       {/* Logo */}
       <div className="mb-14">
         <img
-          src="/logos/GASlogo.png"
+          src="/projects/gas/GAS PORTFOLIO-01.png"
           alt="GAS Project"
-          className="w-40 sm:w-48 md:w-52 lg:w-56 xl:w-60 rounded-2xl mx-auto"
+          className="w-80 sm:w-96 md:w-[32rem] lg:w-[40rem] xl:w-[44rem] rounded-2xl mx-auto"
         />
       </div>
 
