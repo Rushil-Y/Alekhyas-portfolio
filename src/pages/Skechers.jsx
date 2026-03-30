@@ -15,7 +15,7 @@ function Skechers() {
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-08.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-09.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-10.png",
-    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-11.png",
+    "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-11.jpeg",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-12.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-13.png",
     "/projects/skechers/SKECHERS FINAL PORTFOLIO copy-14.png",
