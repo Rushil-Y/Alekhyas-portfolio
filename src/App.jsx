@@ -10,6 +10,7 @@ import Gas from "./pages/Gas";
 import Firstcry from "./pages/Firstcry";
 import Spykar from "./pages/Spykar";
 import Toms from "./pages/Toms";
+import Oblum from "./pages/Oblum";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/projects/firstcry" element={<Firstcry />} />
         <Route path="/projects/spykar" element={<Spykar />} />
         <Route path="/projects/toms" element={<Toms />} />
+        <Route path="/projects/oblum" element={<Oblum />} />
       </Routes>
       <Analytics />
     </Router>
