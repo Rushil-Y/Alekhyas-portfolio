@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
@@ -20,9 +20,13 @@ function Navbar() {
     if (location.pathname === "/") {
       scrollToSection(to);
     } else {
-      // Navigate to home and pass section to scroll to
       navigate("/", { state: { scrollTo: to } });
     }
+  };
+
+  const handleCertifications = () => {
+    navigate("/certifications");
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -35,20 +39,18 @@ function Navbar() {
     }
   }, [isOpen]);
 
+  const menuItems = ["home", "about", "projects"];
+
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            {/* <Link to="/" className="text-2xl font-bold text-black">
-              Alekhya Mulpuri
-            </Link> */}
-          </div>
+          <div className="flex-shrink-0"></div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            {["home", "about", "projects", "contact"].map((section) => (
+            {menuItems.map((section) => (
               <span
                 key={section}
                 onClick={() => handleScroll(section)}
@@ -57,6 +59,20 @@ function Navbar() {
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </span>
             ))}
+
+            <span
+              onClick={handleCertifications}
+              className="px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer"
+            >
+              Certifications
+            </span>
+
+            <span
+              onClick={() => handleScroll("contact")}
+              className="px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer"
+            >
+              Contact
+            </span>
           </div>
 
           {/* Mobile Hamburger */}
@@ -71,7 +87,6 @@ function Navbar() {
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     strokeLinecap="round"
@@ -86,7 +101,6 @@ function Navbar() {
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     strokeLinecap="round"
@@ -101,14 +115,14 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu */}
       <div
         ref={menuRef}
         style={{ maxHeight: `${menuHeight}px` }}
         className="md:hidden overflow-hidden transition-max-height duration-300 ease-in-out bg-white border-t border-gray-200"
       >
         <div className="flex flex-col px-4 py-2 space-y-2">
-          {["home", "about", "projects", "contact"].map((section) => (
+          {menuItems.map((section) => (
             <span
               key={section}
               onClick={() => handleScroll(section)}
@@ -117,6 +131,20 @@ function Navbar() {
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </span>
           ))}
+
+          <span
+            onClick={handleCertifications}
+            className="px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer"
+          >
+            Certifications
+          </span>
+
+          <span
+            onClick={() => handleScroll("contact")}
+            className="px-3 py-2 text-gray-700 hover:text-blue-600 cursor-pointer"
+          >
+            Contact
+          </span>
         </div>
       </div>
     </nav>

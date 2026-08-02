@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
+import Certifications from "./pages/Certifications";
 import ScrollToTop from "./components/ScrollToTop";
 
 // Import the individual project pages
@@ -28,6 +29,7 @@ function App() {
         <Route path="/projects/spykar" element={<Spykar />} />
         <Route path="/projects/toms" element={<Toms />} />
         <Route path="/projects/oblum" element={<Oblum />} />
+        <Route path="/certifications" element={<Certifications />} />
       </Routes>
       <Analytics />
     </Router>
